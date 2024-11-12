@@ -3,17 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>Jaco Durand</title>
   </head>
   <body>
-
-    <h1>Jaco Durand</h1>
+    <div class="container">
+      <!-- Menu -->
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    <div class="me">
+      <div class="me-cover">
+        <div class="me-name">Jaco Durand</div>
+        <div class="me-title">Software Engineer</div>
+      </div>
+    </div>
+    
     <!-- <div class="travel"><h1>Intro</h1></div>
     <div class="travel"><h1>About</h1></div> -->
 
-    <div class="travel">
+    <!-- TRAVEL PAGE -->
+    <div class="travel" >
       <div class="travel-banner">
         <div class="travel-blurb">
           <h1>Travel</h1>
@@ -31,7 +49,7 @@
             aliquid ut. Ea a iure beatae eaque, magni quo explicabo.
           </p>
         </div>
-        <div class="container">
+        <div class="container-travel">
           <div
             class="panel active"
             style="
@@ -76,9 +94,19 @@
       </div>
     </div>
 
+    <!-- <div class="travel"><h1>Contact</h1></div> -->
+  </div>
+  <!-- Navigation List -->
+  <nav>
+    <ul>
+      <li><i class="fas fa-home"></i>Home</li>
+      <li><i class="fas fa-user-alt"></i>About</li>
+      <li><i class="fas fa-envelope"></i>Contact</li>
+    </ul>
+  </nav>
     
     <script src="script.js"></script>
 
-    <div class="travel"><h1>Contact</h1></div>
+    
   </body>
 </html>
