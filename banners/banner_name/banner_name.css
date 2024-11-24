@@ -1,0 +1,15 @@
+  /* STYLES FOR ME */
+
+  .bannerName-cover{
+    margin: 50px 20px;
+    height: 30vh;
+  }
+
+  .bannerName {
+    font-size: 4.5vw;
+    text-align: left;
+  }
+
+  .bannerName-name  h1{
+    margin: 0;
+  }
