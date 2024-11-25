@@ -13,4 +13,9 @@ body {
   width: 100vw;
   overflow-x: hidden;
   margin: 0;
+  background-color: #6e6e6e    ;
+  color: #FFF     ;
+
+  /* #6e6e6e
+  #bcfd4c */
 }

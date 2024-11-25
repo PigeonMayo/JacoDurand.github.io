@@ -1,12 +1,13 @@
   /* STYLES FOR ME */
 
   .bannerName-cover{
-    margin: 50px 20px;
-    height: 40vh;
+    margin: 50px 100px;
+    height: 50vh;
+    padding: 50px;
   }
 
   .bannerName {
-    font-size: 4.5vw;
+    font-size: 4.3vw;
     text-align: left;
   }
 
@@ -16,7 +17,17 @@
 
   .bannerName-title p{
     margin: 0;
+    color: #bcfd4c;
   }
+
+  .profile {
+    width: 12vh;
+    height: 12vh; 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    border-radius: 500px;
+}
 
 
 
