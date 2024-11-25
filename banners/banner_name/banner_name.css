@@ -2,7 +2,7 @@
 
   .bannerName-cover{
     margin: 50px 20px;
-    height: 30vh;
+    height: 40vh;
   }
 
   .bannerName {
@@ -13,3 +13,11 @@
   .bannerName-name  h1{
     margin: 0;
   }
+
+  .bannerName-title p{
+    margin: 0;
+  }
+
+
+
+
