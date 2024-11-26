@@ -1,34 +1,73 @@
   /* STYLES FOR ME */
 
-  .bannerName-cover{
-    margin: 50px 100px;
+  .bannerName-cover {
     height: 50vh;
-    padding: 50px;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
   }
 
   .bannerName {
-    font-size: 4.3vw;
+    font-size: 4vw;
     text-align: left;
+
   }
 
-  .bannerName-name  h1{
+  .splitter{
+    height:30%
+  }
+  .bannerName-name h1 {
     margin: 0;
   }
 
-  .bannerName-title p{
+  .bannerName-title p {
     margin: 0;
     color: #bcfd4c;
   }
 
   .profile {
-    width: 12vh;
-    height: 12vh; 
-    background-size: cover; 
+    width: 35%;
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
-    border-radius: 500px;
+    background-repeat: no-repeat;
+    margin-top: 5%;
+    padding-top: 35%;
+    position: relative;
+    border-radius: 300px;
+
+  }
+
+  /* @media(max-width: 1200px){
+
+.profile{
+  
+  width: 23%;
+  height: 50%; 
 }
 
+} */
 
 
+  @media(max-width: 1100px) {
 
+    .bannerName-cover {
+      align-items: center;
+      flex-direction: column;
+      margin-left: 0;
+    }
+
+    .profile {
+      width: 20%;
+      padding-top: 20%;
+    }
+
+  }
+
+  @media(max-width: 800px) {
+
+    .bannerName-cover {
+      height: 10vh
+    }
+
+
+  }
