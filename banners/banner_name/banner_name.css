@@ -2,9 +2,9 @@
 
   .bannerName-cover {
     height: 50vh;
-    margin-top: 50px;
-    margin-left: 100px;
-    display: flex;
+    margin-top: 100px;
+    /* margin-left: 100px; */
+    /* display: flex; */
   }
 
   .bannerName {
@@ -25,16 +25,22 @@
     color: #bcfd4c;
   }
 
+  .profile-dock{
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+  }
+
   .profile {
-    width: 30%;
+    width: 38%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 5%;
-    padding-top: 27%;
+    padding-top: 35%;
     position: relative;
     border-radius: 300px;
     border: 15px solid #FFF;
+
 
   }
 
@@ -47,9 +53,13 @@
       margin-left: 0;
     }
 
+    .profile-dock{
+      justify-content: center;
+    }
+
     .profile {
-      width: 30%;
-      padding-top: 27%;
+      width: 40%;
+      padding-top: 38%;
       margin-top: 2%;
       border: 10px solid #FFF;
     }
@@ -66,7 +76,7 @@
       width: 45%;
       padding-top: 42%;
       margin-top: 1%;
-      border: 10px solid #FFF;
+      border: 5px solid #FFF;
     }
 
   }

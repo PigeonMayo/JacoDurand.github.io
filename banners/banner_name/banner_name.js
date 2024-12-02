@@ -9,7 +9,7 @@ console.log("banner_name.js is connected!");
  * It types an array of texts in a random order. I like random stuff🙃
  */
 function typingEffect() {
-    const contactTexts = shuffleArray(['Software Engineer.', 'Database Administrator.', 'Data Scientist.']);
+    const contactTexts = shuffleArray(['Software Engineer.', 'Database Admin.', 'Data Scientist.']);
     const typedtext = document.getElementsByClassName("typedtext")[0];
     let removing = false;
     let idx = char = 0;
