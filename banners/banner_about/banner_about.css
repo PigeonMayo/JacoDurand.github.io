@@ -13,8 +13,8 @@
     width: 60%;
 }
 
-.okay{
-    max-width: 70vw;
+.container{
+    max-width: 60vw;
     display: flex;
     justify-content: flex-end; /* Aligns items to the right */
 }
@@ -23,7 +23,7 @@
 
 @media(max-width: 1100px) {
 
-    .okay {
+    .container {
       justify-content: center;
     }
 
@@ -34,6 +34,10 @@
 
     .header{
         font-size: 4vh;
+    }
+    
+    .body{
+        font-size: 16px;
     }
 
   }
