@@ -66,3 +66,16 @@ fetch('banners/banner_lang/banner_lang.html')
   .catch(error => {
     console.error('Error loading banner:', error);
   });
+
+  
+// CONTACT
+fetch('banners/banner_contact/banner_contact.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('banner_contact').innerHTML = data;
+  
+
+})
+  .catch(error => {
+    console.error('Error loading banner:', error);
+  });
