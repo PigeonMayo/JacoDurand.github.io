@@ -34,7 +34,7 @@
     box-sizing: border-box; 
     height: 100px;
     border-radius: 10px;
-    transition: background-color 0.3s, transform 0.3s; /* Smooth hover and active effects */
+    transition: background-color 0.3s, transform 0.3s; 
   }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -50,7 +50,7 @@
   overflow: hidden;
   background-color: #444;
   border-radius: 10px;
-  transition: max-height 0.8s ease-out, padding 0.8s ease-out; /* Smooth opening/closing */
+  transition: max-height 0.8s ease-out, padding 0.8s ease-out; 
   color: white;
 }
 
@@ -68,7 +68,7 @@
   
   .right-text {
     text-align: right;
-    white-space: nowrap; /* Prevent wrapping */
+    white-space: nowrap;
   }
 
 @media(max-width: 1100px) {
