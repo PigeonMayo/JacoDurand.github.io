@@ -1,44 +1,61 @@
-.header{
-    color: #bcfd4c;
-    font-weight: bold;
-    font-size: 5vh;
-}
 
-.body{
-    font-size: 18px;
-}
-
-.middle-div {
-    margin-top: 5%;
-    width: 60%;
+.about-container{
+    /* width: 100%;
+    display: flex;
+    justify-content: center; */
+    align-items: center;
 }
 
 .container{
-    max-width: 60vw;
-    display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
+    padding:min(5em , 10%) ;
+    /* border: solid 5px; */
+    border-radius: 10px;
+    margin: 30px auto;
+    width: min(800px , 80%);
+    position: relative;
+    background-color: #1c1f2b;
+
 }
 
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
 
+.container::after, .container::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545,#00ff99,#006aff,#ff0095,#ff4545) ;
+    /* background-image: conic-gradient(from var(--angle),  transparent 60%,blue); */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
 
-@media(max-width: 1100px) {
+    animation: 3s spin linear infinite;
 
-    .container {
-      justify-content: center;
+}
+.container::before{
+    filter:blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
     }
-
-    .middle-div{
-        margin-top: 0%;
-        width: 100%;
+    to{
+        --angle: 360deg;
     }
+}
 
-    .header{
-        font-size: 4vh;
-    }
-    
-    .body{
-        font-size: 16px;
-    }
-
-  }
-
+.header{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #bcfd4c;
+}
