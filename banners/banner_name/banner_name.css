@@ -45,12 +45,12 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/assets/images/backdropInk.png'); 
+  background-image: url('../../assets/images/backdropInk.png'); 
   background-size: cover;
   background-position: center;
   z-index: -1;
 
-  mask-image: url('/assets/videos/inkBlotch.gif');
+  mask-image: url('../../assets/videos/inkBlotch.gif');
   mask-size: cover;
   mask-position: center;
 

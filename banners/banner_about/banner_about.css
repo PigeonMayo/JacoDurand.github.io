@@ -1,8 +1,5 @@
 
 .about-container{
-    /* width: 100%;
-    display: flex;
-    justify-content: center; */
     align-items: center;
 }
 
@@ -36,9 +33,7 @@
     z-index: -1;
     padding: 3px;
     border-radius: 10px;
-
     animation: 3s spin linear infinite;
-
 }
 .container::before{
     filter:blur(1.5rem);
