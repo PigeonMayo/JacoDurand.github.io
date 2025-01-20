@@ -1,105 +1,92 @@
-.header-exp{
-    color: #bcfd4c;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.body-exp{
-    font-size: 18px;
-}
-
-.collapse-exp{
-    margin: 20px 0px;
-}
-
-.container-exp{
-    display: flex;
-    justify-content: flex-start; 
-    margin-top: 110px;
-    width: 60vw;
+/*-----------------------------------------------------------------------------------------------------*/
+.exp-container{
+  margin: 100px 0 100px 0;
 }
 
 
-.collapsible {
-    background-color: #1c1f2b;
-    color: #fff;
-    cursor: pointer;
-    padding: 18px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1rem;
-    width: 100%; 
-    box-sizing: border-box; 
-    height: 100px;
-    border-radius: 10px;
-    transition: background-color 0.3s, transform 0.3s; 
-  }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #2e3445;
-  transform: scale(1.02); 
+.header-exp {
+  color: #bcfd4c;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 10px 18px;
-
-  display: none;
-  overflow: hidden;
-  background-color: #1c1f2b;
+.faq-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.faq {
+  background-color: transparent;
+  border: 1px solid #9fa4a8;
   border-radius: 10px;
-  transition: max-height 0.8s ease-out, padding 0.8s ease-out; 
-  color: white;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s ease, transform 0.3s;
 }
 
+.faq.active {
+  background-color: #1c1f2b;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+.faq-title {
+  margin: 0 35px 0 0;
+}
 
-/* Left and right text */
-.button-content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
-  }
-  
-  .left-text {
-    text-align: left;
-  }
-  
-  .right-text {
-    text-align: right;
-    white-space: nowrap;
-  }
+.faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
 
-@media(max-width: 1100px) {
+.faq.active .faq-text {
+  display: block;
+}
 
-    .right-text {
-        display: none; 
-    }
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  background-color: #9fa4a8;
+}
 
-    .container-exp{
-        max-width: 70vw;
-    }
+.faq:hover {
+  background-color: #1c1f2b;
+}
 
-    .middle-div-exp{
-        margin-top: 10%;
-        width: 100%;
-    }
+.faq-toggle .fa-times {
+  display: none;
+}
 
-    .header-exp{
-        font-size: 4vh;
-    }
+.faq.active .faq-toggle .fa-times {
+  color: #fff;
+  display: block;
+}
 
-    .body-exp{
-        font-size: 16px;
-    }
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
 
-    .content{
-      font-size: 12px;
-      padding: 10px;
-      padding-right: 8px;
-    }
+.faq.active .faq-toggle {
+  background-color: #9fa4a8;
+}
 
-  }
+.project {
+  margin-bottom: 30px;
+}
 
+.project h3 {
+  color: #00adb5;
+  margin-bottom: 10px;
+}
