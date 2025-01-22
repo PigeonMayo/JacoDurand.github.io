@@ -1,8 +1,18 @@
 /*-----------------------------------------------------------------------------------------------------*/
-.exp-container{
-  margin: 100px 0 100px 0;
+
+
+.exp-container {
+  align-items: center;
+  width: 100vw;
+  width: 100dvw;
 }
 
+.exp-2nd-container {
+  padding:min(5em , 10%),min(min(5em , 0)) ;
+    margin: 60px auto;
+    width: min(1200px , 80%);
+    position: relative;
+}
 
 .header-exp {
   color: #bcfd4c;
@@ -10,10 +20,7 @@
   font-size: 3rem;
 }
 
-.faq-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
+
 .faq {
   background-color: transparent;
   border: 1px solid #9fa4a8;
@@ -22,15 +29,15 @@
   padding: 30px;
   position: relative;
   overflow: hidden;
-  transition: 0.6s ease, transform 0.3s;
+  transition: 0.6s ease ;
 }
 
 .faq.active {
   background-color: #1c1f2b;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 .faq-title {
   margin: 0 35px 0 0;
+ 
 }
 
 .faq-text {
@@ -89,4 +96,16 @@
 .project h3 {
   color: #00adb5;
   margin-bottom: 10px;
+}
+
+.bus-images{
+  border-radius: 10px;
+}
+
+.occupations p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00adb5;
+  margin: 5px 0; /* Add spacing between occupations */
+  text-align: center;
 }

@@ -1,9 +1,4 @@
 
-
-console.log("banner_name.js is connected!");
-
-
-
 /*
  * typingEffect()
  * It types an array of texts in a random order. I like random stuff🙃
